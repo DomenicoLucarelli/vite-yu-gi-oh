@@ -16,7 +16,7 @@ export default {
         axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=50&offset=0').then((res) => {
 
             this.store.cards = res.data.data
-            console.log(this.store.cards[0].card_images[0].image_url)
+
         })
     },
 
@@ -26,7 +26,7 @@ export default {
 
 <template>
     <div class="deck">
-        <MainCard v-for="(card, index) in this.store.cards" :imageUrl="card[index].card_images[0].image_url">
+        <MainCard v-for="(card, index) in this.store.cards" :image="card[index].card_images[0].image_url">
 
         </MainCard>
 

@@ -14,7 +14,7 @@ export default {
     },
 
     props: {
-        card: Object,
+        image: String,
     }
 }
 </script>
@@ -23,7 +23,7 @@ export default {
     <div class="card">
 
         <div class="image">
-            <img :src="imageUrl" alt="">
+            <img :src="image" alt="">
         </div>
 
         <div class="title">

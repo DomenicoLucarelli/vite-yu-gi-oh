@@ -5,7 +5,7 @@ export default {
   data() {
     return {};
   },
-  components: { AppMain, }
+  components: { AppMain }
 }
 </script>
 
