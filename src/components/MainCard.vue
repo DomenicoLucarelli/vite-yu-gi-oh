@@ -1,9 +1,8 @@
 <script>
 
-
 export default {
 
-    name: 'MainCard',
+
 
     data() {
         return {
@@ -15,6 +14,7 @@ export default {
 
     props: {
         image: String,
+        cardName: String,
     }
 }
 </script>
@@ -27,7 +27,7 @@ export default {
         </div>
 
         <div class="title">
-
+            <span>{{ cardName }}</span>
         </div>
 
     </div>
@@ -44,6 +44,12 @@ export default {
             width: 100%;
 
         }
+    }
+
+    .title{
+        text-align: center;
+        background-color: #403d39;
+        border-radius: 10px;
     }
 
 }
