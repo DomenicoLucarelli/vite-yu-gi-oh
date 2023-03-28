@@ -32,7 +32,7 @@ export default {
 
     <div class="deck" v-else="">
 
-        <MainCard v-for="(card, index) in store.cards" :image="card.card_images[0].image_url" :card-name="card.name" >
+        <MainCard v-for="(card, index) in store.cards" :image="card.card_images[0].image_url" :card-name="card.name" :descrizione="card.desc">
 
         </MainCard>
     </div>
