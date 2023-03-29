@@ -13,7 +13,7 @@ export default {
       store,
     };
   },
-  components: { AppMain, AppCounter }
+  components: { AppMain, AppCounter,  }
 }
 </script>
 
@@ -21,13 +21,9 @@ export default {
   
   <div class="container" >
 
-    <AppCounter >
+    <AppCounter ></AppCounter>
 
-    </AppCounter>
-    <AppMain>
-
-    </AppMain>
-
+    <AppMain></AppMain>
 
   </div>
 </template>
